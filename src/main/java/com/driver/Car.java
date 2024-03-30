@@ -35,6 +35,12 @@ public class Car {
  public static int getAvailableCars(Car[] cars) {
 	//your code goes here
 	 int count = 0;
+     for(int i=0;i<cars.length;i++){
+         Car c = cars[i];
+         if(c.isAvailable == true){
+             count++;
+         }
+     }
      return count;
  }
 }
